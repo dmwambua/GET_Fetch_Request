@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8"> <!-- Specifies the character encoding for the document as UTF-8 -->
+    <title>Word Smith</title> <!-- Sets the title of the webpage that appears in the browser tab -->
+
+    <!-- Links to an external CSS stylesheet for styling the webpage -->
+    <link rel="stylesheet" type="text/css" href="./public/style.css" />
+
+    <!-- Links to Google Fonts for custom fonts used on the webpage -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro|Work+Sans:200,500" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <!-- Displays the logo of the application at the top of the page -->
+        <img src="https://content.codecademy.com/courses/intermediate-javascript-requests/wordsmith_logo.svg"
+            class="logo" />
+    </header>
+
+    <main id="main">
+        <div class="container"> <!-- A container for organizing and styling content -->
+
+            <h1>Enter a Word</h1> <!-- Main heading prompting users to enter a word -->
+
+            <!-- Form element where users can input a word and submit it -->
+            <form id="form" autocomplete="off"> <!-- `autocomplete="off"` disables browser autocomplete suggestions -->
+                <input type="text" id="input" value=""> <!-- Input field for entering a word -->
+                <button id="submit">SUBMIT</button> <!-- Button to submit the form -->
+            </form>
+
+            <!-- Div element where API responses will be displayed dynamically -->
+            <div id="responseField">
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Includes jQuery library for additional JavaScript functionality -->
+    <script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
+
+    <!-- Links to external JavaScript files for functionality -->
+    <script src="public/main.js"></script> <!-- Main JavaScript file controlling application logic -->
+    <script src="public/helperFunctions.js"></script> <!-- Additional helper functions used in the application -->
+</body>
+
+</html>
